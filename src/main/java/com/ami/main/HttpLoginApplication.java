@@ -30,15 +30,11 @@ public class HttpLoginApplication {
 			String postReqParameters = webObj.getParameters(htmlLoginForm, userName, password);
 
 			// send a post request to login to the application
-			// authentication
 			webObj.sendPostRequest(accountURL, postReqParameters);
 			
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
-
-
-
 
 	}
 
